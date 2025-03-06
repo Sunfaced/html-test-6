@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="layout">
+        <div class="layout__img-1"></div>
+        <div class="layout__img-2"></div>
+      </div>
+      <header class="header">
+        <div class="header__inner">
+          <a class="header__logo" href="">
+            <img class="header__logo-img" src="/Logo.svg" alt="Logo" />
+          </a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">People nearby</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Search</a>
+            </li>
+            <li class="header__item">
+              <button class="header__button">
+                <span>Premium</span>
+                <img src="/premium.svg" alt="Icon" />
+              </button>
+            </li>
+          </ul>
+          <div class="mobile-header">
+            <div class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img class="header__premium-icon" src="/premium.svg" alt="Premium" />
+          </div>
+        </div>
+      </header>
+      <div class="menu-overlay"></div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <img src="/Profile.svg" alt="Profile" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Profile</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Photos.svg" alt="My photos" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">My photos</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Messages.svg" alt="Messages" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Messages</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Favorites.svg" alt="Favorites" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Favorites</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Guests.svg" alt="Guests" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Guests</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Settings.svg" alt="Settings" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Settings</span>
+          </li>
+          <li class="mobile-menu__item">
+            <img src="/Logout.svg" alt="Log out" class="mobile-menu__icon" />
+            <span class="mobile-menu__text">Log out</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <nav class="nav">
+          <div class="nav__info">
+            <div class="nav__profile">
+              <img class="nav__profile-img" src="/face.png" alt="profile img" />
+              <div class="nav__profile-info">
+                <span class="nav__profile-text">Test2412</span>
+                <button class="nav__profile-btn">GET PREMIUM</button>
+              </div>
+            </div>
+            <hr class="divider-first" />
+            <div>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">
+                  <img src="/Profile.svg" alt="Profile" class="sidebar__icon" />
+                  <span class="sidebar__text">Profile</span>
+                </li>
+                <li class="sidebar__item">
+                  <img
+                    src="/Photos.svg"
+                    alt="My photos"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">My photos</span>
+                </li>
+                <li class="sidebar__item">
+                  <img
+                    src="/Messages.svg"
+                    alt="Messages"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Messages</span>
+                </li>
+                <li class="sidebar__item">
+                  <img
+                    src="/Favorites.svg"
+                    alt="Favorites"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Favorites</span>
+                </li>
+                <li class="sidebar__item">
+                  <img src="/Guests.svg" alt="Guests" class="sidebar__icon" />
+                  <span class="sidebar__text">Guests</span>
+                </li>
+                <li class="sidebar__item">
+                  <img
+                    src="/Settings.svg"
+                    alt="Settings"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Settings</span>
+                </li>
+                <li class="sidebar__item">
+                  <img src="/Logout.svg" alt="Log out" class="sidebar__icon" />
+                  <span class="sidebar__text">Log out</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <main class="main">
+          <div class="mobile-content">
+            <div class="mobile-slider">
+              <div class="mobile-slide active">
+                <div class="mobile-price">
+                  <div class="mobile-price__label">One time offer!</div>
+                  <div class="mobile-price__amount">
+                    <span class="mobile-price__value">50</span>
+                    <span class="mobile-price__currency">CR</span>
+                  </div>
+                  <button class="mobile-price__button">Buy now</button>
+                </div>
+              </div>
+              <div class="mobile-slide">
+                <div class="mobile-price">
+                  <div class="mobile-price__amount">
+                    <span class="mobile-price__value">150</span>
+                    <span class="mobile-price__currency">CR</span>
+                  </div>
+                  <button class="mobile-price__button">Buy now</button>
+                </div>
+              </div>
+              <div class="mobile-slide">
+                <div class="mobile-price">
+                  <div class="mobile-price__amount">
+                    <span class="mobile-price__value">300</span>
+                    <span class="mobile-price__currency">CR</span>
+                  </div>
+                  <button class="mobile-price__button">Buy now</button>
+                </div>
+              </div>
+              <div class="mobile-slide">
+                <div class="mobile-price">
+                  <div class="mobile-price__amount">
+                    <span class="mobile-price__value">500</span>
+                    <span class="mobile-price__currency">CR</span>
+                  </div>
+                  <button class="mobile-price__button">Buy now</button>
+                </div>
+              </div>
+              <div class="mobile-slide">
+                <div class="mobile-price">
+                  <div class="mobile-price__amount">
+                    <span class="mobile-price__value">1000</span>
+                    <span class="mobile-price__currency">CR</span>
+                  </div>
+                  <button class="mobile-price__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-dots">
+              <span class="mobile-dot active"></span>
+              <span class="mobile-dot"></span>
+              <span class="mobile-dot"></span>
+              <span class="mobile-dot"></span>
+              <span class="mobile-dot"></span>
+            </div>
+            <button class="try-now-button">Try now</button>
+            <div class="agreement">
+              <input type="checkbox" id="mobile-agree" checked />
+              <label for="mobile-agree">
+                By clicking Checkbox you agree and accept our <a href="#">Privacy Policy</a>, and <a href="#">Terms of use</a>
+              </label>
+            </div>
+            <img src="/Brilliant.svg" alt="Diamond" class="diamond-image" />
+            <div class="mobile-features">
+              <div class="mobile-features__item">
+                <div class="mobile-features__icon-wrapper">
+                  <img src="/Messages.svg" alt="Messages" class="mobile-features__icon" />
+                </div>
+                <span class="mobile-features__text">Send messages</span>
+              </div>
+              <div class="mobile-features__item">
+                <div class="mobile-features__icon-wrapper">
+                  <img src="/Photos.svg" alt="Photos" class="mobile-features__icon" />
+                </div>
+                <span class="mobile-features__text">View hidden photos</span>
+              </div>
+              <div class="mobile-features__item">
+                <div class="mobile-features__icon-wrapper">
+                  <img src="/Messages.svg" alt="Messages" class="mobile-features__icon" />
+                </div>
+                <span class="mobile-features__text">Send gifts</span>
+              </div>
+              <div class="mobile-features__item">
+                <div class="mobile-features__icon-wrapper">
+                  <img src="/Favorites.svg" alt="Favorites" class="mobile-features__icon" />
+                </div>
+                <span class="mobile-features__text">Use other premium features</span>
+              </div>
+            </div>
+          </div>
+          <section class="section-1">
+            <div class="main__title">
+              <h1 class="main__title-info">Закончились кредиты?</h1>
+            </div>
+            <hr class="divider-second" />
+            <div class="main__offer">
+              <span class="main__offer-discount">Скидка 40%</span>
+              <span class="main__offer-offer"
+                >Предложение действует в течение:</span
+              >
+              <span class="main__offer-timer">00 : 10 : 00</span>
+            </div>
+            <div class="main__slider">
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">50</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">150</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">300</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">500</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">1000</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+              <div class="slider__box">
+                <h3 class="slider__box-title"></h3>
+                <div>
+                  <div class="slider__box-price">
+                    <span class="price__value">1000</span>
+                    <span class="price__symbol">CR</span>
+                  </div>
+                </div>
+                <button class="slider__box-btn">Buy now</button>
+              </div>
+            </div>
+            <div class="agreement">
+              <input type="checkbox" checked id="agree" />
+              <label for="agree">
+                By clicking Checkbox you agree and accept our
+                <a href="#" class="link">Privacy Policy</a>, and
+                <a href="#" class="link">Terms of use</a>
+              </label>
+            </div>
+          </section>
+          <section class="section-2">
+            <div class="possibilities">
+              <div class="possibilities__first">
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Messages.svg" alt="Messages" />
+                  </div>
+                  <span
+                    >Отправлять <br />
+                    сообщения</span
+                  >
+                </div>
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Favorites.svg" alt="Favorites" />
+                  </div>
+                  <span
+                    >Пользоваться <br />
+                    другими премиум <br />
+                    функциями</span
+                  >
+                </div>
+              </div>
+              <div class="possibilities__first">
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Messages.svg" alt="Messages" />
+                  </div>
+                  <span
+                    >Отправлять <br />
+                    сообщения</span
+                  >
+                </div>
+                <div class="possibilities__block">
+                  <img
+                    class="brilliant-img"
+                    src="/Brilliant.svg"
+                    alt="Favorites"
+                  />
+                </div>
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Guests.svg" alt="Guests" />
+                  </div>
+                  <span
+                    >Просматривать <br />
+                    скрытые фото</span
+                  >
+                </div>
+              </div>
+              <div class="possibilities__first">
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Messages.svg" alt="Messages" />
+                  </div>
+                  <span
+                    >Просматривать <br />
+                    скрытые фото</span
+                  >
+                </div>
+                <div class="possibilities__block">
+                  <div class="possibilities__img">
+                    <img class="img" src="/Favorites.svg" alt="Favorites" />
+                  </div>
+                  <span
+                    >Просматривать <br />
+                    скрытые фото</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Burger menu functionality
+      const burgerMenu = document.querySelector('.burger-menu');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const menuOverlay = document.querySelector('.menu-overlay');
+
+      burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+      });
+
+      menuOverlay.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+      });
+
+      // Slider functionality
+      const slides = document.querySelectorAll('.mobile-slide');
+      const dots = document.querySelectorAll('.mobile-dot');
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Touch events for swipe
+      let touchStartX = 0;
+      const slider = document.querySelector('.mobile-slider');
+
+      slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      });
+
+      slider.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > 50) { // Minimum swipe distance
+          if (diff > 0) {
+            nextSlide(); // Swipe left
+          } else {
+            prevSlide(); // Swipe right
+          }
+        }
+      });
+
+      // Allow clicking dots to change slides
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+
+      // Auto-advance slides every 3 seconds
+      setInterval(nextSlide, 3000);
+    </script>
+  </body>
+</html>
